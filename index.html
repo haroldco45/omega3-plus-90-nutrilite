@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Omega 3 Plus 90 · Nutrilite — Pide con Harold</title>
+<meta name="description" content="Omega 3 Plus 90 cápsulas de Nutrilite. EPA y DHA de peces de aguas frías, con vitamina E. Pide por WhatsApp con envío a toda Colombia.">
+<meta name="theme-color" content="#0C3550">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta property="og:title" content="Omega 3 Plus 90 · Nutrilite">
+<meta property="og:description" content="900 mg de Omega 3 por porción. Pide por WhatsApp, envío a toda Colombia.">
+<meta property="og:image" content="https://www.amway.com.co/assets/amshop/v3/assets/blt61e661dff490fa0d/blt1e3e1f4d32f24426/67ecf8b346c6e930898406f6/8914_01.jpg?quality=85&width=1200&format=jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --abismo:#0C3550;      /* azul de mar frío */
+  --corriente:#16597E;
+  --hielo:#E8F2F5;
+  --espuma:#F7FBFC;
+  --capsula:#F2B632;     /* el dorado de la cápsula: el único acento fuerte */
+  --capsula-osc:#C98A0C;
+  --tinta:#10222E;
+  --gris:#5A6E7A;
+  --wa:#1DA851;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --texto:"Figtree",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font-family:var(--texto);color:var(--tinta);background:var(--espuma);line-height:1.55;font-size:17px;padding-bottom:84px}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--capsula);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;letter-spacing:-.01em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* barra superior */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(12,53,80,.94);backdrop-filter:blur(8px);color:#fff}
+.top .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.marca{font-family:var(--display);font-weight:800;font-size:19px;text-decoration:none;display:flex;align-items:center;gap:8px}
+.marca svg{width:28px;height:28px}
+.top nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{text-decoration:none;font-size:14px;padding:8px 10px;border-radius:999px;white-space:nowrap;opacity:.85}
+.top nav a:hover{opacity:1;background:rgba(255,255,255,.1)}
+@media (max-width:640px){.top nav{display:none}}
+
+/* hero */
+.hero{background:var(--abismo);color:#fff;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:90px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.18))}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:28px;align-items:center;padding-top:44px;padding-bottom:56px;position:relative;z-index:1}
+.hero .linea{font-size:15px;color:#BFD9E6;margin:0 0 14px}
+.hero h1{font-size:clamp(44px,8vw,86px);font-weight:800}
+.hero h1 small{display:block;font-size:.42em;font-weight:500;color:#BFD9E6;margin-top:10px;letter-spacing:0}
+.hero p.lead{font-size:19px;max-width:30ch;margin:20px 0 26px;color:#E3EEF3}
+.cifra{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:28px}
+.cifra div{border-left:3px solid var(--capsula);padding-left:12px}
+.cifra b{display:block;font-family:var(--display);font-size:30px;font-weight:700;line-height:1}
+.cifra span{font-size:14px;color:#BFD9E6}
+.hero-foto{background:#fff;border-radius:28px;padding:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);transform:rotate(2deg)}
+.hero-foto img{border-radius:16px;aspect-ratio:1;object-fit:contain;width:100%}
+@media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero-foto{order:-1;max-width:380px;margin:0 auto;transform:rotate(1.5deg)}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 var(--texto);padding:16px 22px;border-radius:14px;border:0;cursor:pointer;text-decoration:none;min-height:52px}
+.btn-capsula{background:var(--capsula);color:var(--tinta)}
+.btn-capsula:hover{background:#FFC64A}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#18934A}
+.btn-claro{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
+.btn svg{width:22px;height:22px;flex:none}
+
+section{padding:64px 0}
+.sec-cab{max-width:640px;margin-bottom:30px}
+.sec-cab h2{font-size:clamp(32px,5vw,48px);font-weight:700;color:var(--abismo)}
+.sec-cab p{color:var(--gris);margin:12px 0 0}
+
+/* galería */
+.galeria{display:grid;grid-template-columns:1fr 120px;gap:14px}
+.visor{background:#fff;border-radius:22px;border:1px solid #D7E6EC;overflow:hidden;display:grid;place-items:center;min-height:320px}
+.visor img{width:100%;max-height:560px;object-fit:contain}
+.miniaturas{display:flex;flex-direction:column;gap:10px}
+.miniaturas button{padding:0;border:2px solid #D7E6EC;border-radius:14px;background:#fff;cursor:pointer;overflow:hidden;aspect-ratio:1}
+.miniaturas button[aria-current="true"]{border-color:var(--capsula);box-shadow:0 0 0 3px rgba(242,182,50,.3)}
+.miniaturas img{width:100%;height:100%;object-fit:cover}
+.pie-foto{font-size:14px;color:var(--gris);margin-top:10px}
+@media (max-width:640px){.galeria{grid-template-columns:1fr}.miniaturas{flex-direction:row;overflow-x:auto}.miniaturas button{width:78px;flex:none}}
+
+/* lo que trae */
+.ficha{background:var(--hielo)}
+.trae{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0;border-top:2px solid var(--abismo)}
+.trae div{padding:22px 20px 22px 0;border-bottom:1px solid #C3D8E0}
+.trae b{font-family:var(--display);font-size:40px;color:var(--abismo);font-weight:700;display:block;line-height:1}
+.trae p{margin:8px 0 0;color:var(--gris);max-width:28ch}
+.origen{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:44px}
+.origen img{border-radius:22px}
+.origen h3{font-size:30px;color:var(--abismo);margin-bottom:12px}
+@media (max-width:760px){.origen{grid-template-columns:1fr}}
+
+/* videos */
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.video{background:#000;border-radius:20px;overflow:hidden;aspect-ratio:16/9;position:relative}
+.video button{all:unset;position:absolute;inset:0;cursor:pointer;display:grid;place-items:center}
+.video button img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8}
+.video button span{position:relative;width:74px;height:74px;border-radius:50%;background:var(--capsula);display:grid;place-items:center}
+.video button span svg{width:30px;margin-left:5px}
+.video iframe{width:100%;height:100%;border:0}
+.video-t{font-weight:600;margin:10px 0 0}
+.video-s{font-size:14px;color:var(--gris);margin:2px 0 0}
+
+/* cotizador */
+.cotiza{background:var(--abismo);color:#fff}
+.cotiza .sec-cab h2{color:#fff}
+.cotiza .sec-cab p{color:#BFD9E6}
+.panel{display:grid;grid-template-columns:1.2fr 1fr;gap:24px}
+.paso{margin-bottom:26px}
+.paso h3{font-size:20px;margin-bottom:12px;font-weight:600}
+.opciones{display:flex;flex-wrap:wrap;gap:10px}
+.opciones button{font:600 16px var(--texto);color:#fff;background:rgba(255,255,255,.07);border:2px solid rgba(255,255,255,.22);border-radius:12px;padding:12px 16px;cursor:pointer;min-width:56px;min-height:48px}
+.opciones button[aria-pressed="true"]{background:var(--capsula);border-color:var(--capsula);color:var(--tinta)}
+.resumen{background:#fff;color:var(--tinta);border-radius:24px;padding:26px;align-self:start}
+.resumen .frascos{display:flex;align-items:baseline;gap:10px}
+.resumen .frascos b{font-family:var(--display);font-size:64px;font-weight:800;color:var(--abismo);line-height:1}
+.resumen dl{margin:18px 0;display:grid;grid-template-columns:1fr auto;gap:8px 12px;font-size:15px}
+.resumen dt{color:var(--gris)}
+.resumen dd{margin:0;font-weight:600;text-align:right}
+.resumen .total{border-top:2px solid var(--hielo);padding-top:12px;font-size:17px}
+.resumen .nota{font-size:13px;color:var(--gris);margin:0 0 16px}
+.resumen label{display:block;font-size:14px;font-weight:600;margin:12px 0 6px}
+.resumen input{width:100%;font:16px var(--texto);padding:12px 14px;border:1.5px solid #C3D8E0;border-radius:12px}
+.resumen .btn{width:100%;margin-top:16px}
+@media (max-width:820px){.panel{grid-template-columns:1fr}}
+
+/* uso, ingredientes, faq */
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+@media (max-width:760px){.dos{grid-template-columns:1fr}}
+.dosis{display:flex;gap:10px;margin:16px 0}
+.dosis i{width:58px;height:26px;border-radius:13px;background:linear-gradient(90deg,var(--capsula-osc) 50%,var(--capsula) 50%);display:block;transform:rotate(-20deg)}
+.caja{background:#fff;border:1px solid #D7E6EC;border-radius:20px;padding:24px}
+.caja h3{font-size:24px;color:var(--abismo);margin-bottom:10px}
+.caja p,.caja li{color:#33495A}
+.ingredientes{font-size:15px}
+details{border-bottom:1px solid #D7E6EC;padding:16px 0}
+summary{font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:18px}
+summary::after{content:"+";font-family:var(--display);font-size:26px;line-height:.8;color:var(--corriente)}
+details[open] summary::after{content:"–"}
+details p{color:#33495A;margin:10px 0 0;max-width:68ch}
+.aviso{background:#FFF7E3;border:1px solid #F0DCA6;border-radius:16px;padding:18px 20px;font-size:14px;color:#5B4A1C}
+.aviso b{display:block;margin-bottom:4px}
+
+/* vendedor */
+.vendedor{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.avatar{width:72px;height:72px;border-radius:50%;background:var(--abismo);color:var(--capsula);display:grid;place-items:center;font:800 28px var(--display)}
+footer{background:var(--tinta);color:#9FB3BF;font-size:14px;padding:30px 0 40px}
+footer a{color:#fff}
+
+/* barra fija de pedido */
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid #D7E6EC;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:12px;align-items:center;justify-content:center;box-shadow:0 -10px 30px -12px rgba(12,53,80,.25)}
+.barra .info{font-size:14px;line-height:1.25;color:var(--gris)}
+.barra .info b{display:block;color:var(--tinta);font-size:16px}
+.barra .btn{min-height:48px;padding:12px 18px}
+@media (max-width:420px){.barra .info{display:none}.barra .btn{flex:1}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Omega 3 Plus, inicio">
+      <svg viewBox="0 0 512 512" aria-hidden="true"><g transform="rotate(-35 256 256)"><rect x="96" y="196" width="320" height="120" rx="60" fill="#F2B632"/><rect x="96" y="196" width="160" height="120" rx="60" fill="#E09A12"/></g></svg>
+      Omega 3 Plus
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#fotos">Fotos</a>
+      <a href="#trae">Lo que trae</a>
+      <a href="#videos">Videos</a>
+      <a href="#pedido">Arma tu pedido</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div>
+        <p class="linea">Nutrilite™ · Suplemento dietario · Reg. sanitario SD2018-0004198</p>
+        <h1>Omega 3 Plus<small>90 cápsulas blandas · un mes completo</small></h1>
+        <p class="lead">EPA y DHA de sardina, anchoa y sierra de mares fríos, con vitamina E. Sin sabor ni olor a pescado.</p>
+        <div class="cifra">
+          <div><b>900 mg</b><span>Omega 3 por porción</span></div>
+          <div><b>15 UI</b><span>vitamina E por porción</span></div>
+          <div><b>3</b><span>cápsulas al día</span></div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-capsula" href="#pedido">Arma tu pedido</a>
+          <a class="btn btn-claro" href="#videos">Ver videos</a>
+        </div>
+      </div>
+      <div class="hero-foto">
+        <img src="https://www.amway.com.co/assets/amshop/v3/assets/blt61e661dff490fa0d/blt1e3e1f4d32f24426/67ecf8b346c6e930898406f6/8914_01.jpg?quality=90&width=900&format=webp" alt="Frasco de Omega 3 Plus Nutrilite de 90 cápsulas" width="900" height="900" fetchpriority="high">
+      </div>
+    </div>
+  </section>
+
+  <section id="fotos">
+    <div class="wrap">
+      <div class="sec-cab">
+        <h2>Míralo de cerca</h2>
+        <p>Fotos oficiales de Amway Colombia: el frasco, la cápsula y la tabla nutricional.</p>
+      </div>
+      <div class="galeria">
+        <div class="visor"><img id="visor" src="" alt=""></div>
+        <div class="miniaturas" id="miniaturas" role="group" aria-label="Elegir foto"></div>
+      </div>
+      <p class="pie-foto" id="pie-foto"></p>
+    </div>
+  </section>
+
+  <section class="ficha" id="trae">
+    <div class="wrap">
+      <div class="sec-cab">
+        <h2>Lo que trae cada porción</h2>
+        <p>Una porción son 3 cápsulas. El frasco de 90 te alcanza para 30 días.</p>
+      </div>
+      <div class="trae">
+        <div><b>900 mg</b><p>de ácidos grasos Omega 3, en combinación balanceada de EPA y DHA.</p></div>
+        <div><b>15 UI</b><p>de vitamina E, excelente fuente, con acción antioxidante.</p></div>
+        <div><b>30 días</b><p>por frasco de 90 cápsulas, tomando 3 al día.</p></div>
+        <div><b>Cero</b><p>sabor u olor a pescado. Cápsula blanda fácil de tragar.</p></div>
+      </div>
+      <div class="origen">
+        <img src="https://www.amway.com.co/assets/amshop/v3/assets/blt61e661dff490fa0d/blta202c41aa5c7ad30/680afe260e3d117fd47b12ca/8914.jpg?quality=75&width=1000&format=webp" alt="Omega 3 Plus proporciona una combinación balanceada de dos ácidos grasos Omega 3" loading="lazy">
+        <div>
+          <h3>Del océano frío a tu mesa</h3>
+          <p>El aceite viene de una mezcla de peces pequeños de aguas frías: sardina, anchoa, sierra, entre otros. Es la fuente de EPA y DHA, dos ácidos grasos que el cuerpo no produce por sí solo y que se obtienen de la alimentación.</p>
+          <p>Si no comes pescado de mar al menos dos veces por semana, Omega 3 Plus te ayuda a complementar lo que falta en tu dieta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos">
+    <div class="wrap">
+      <div class="sec-cab">
+        <h2>Videos</h2>
+        <p>Videos de Amway Latinoamérica sobre Omega 3 Plus de Nutrilite. Toca para reproducir.</p>
+      </div>
+      <div class="videos" id="videos-lista"></div>
+    </div>
+  </section>
+
+  <section class="cotiza" id="pedido">
+    <div class="wrap">
+      <div class="sec-cab">
+        <h2>Arma tu pedido</h2>
+        <p>Elige para cuántas personas y cuántos meses. Te decimos cuántos frascos necesitas y lo pides por WhatsApp.</p>
+      </div>
+      <div class="panel">
+        <div>
+          <div class="paso">
+            <h3>¿Para cuántas personas?</h3>
+            <div class="opciones" id="op-personas" role="group" aria-label="Personas"></div>
+          </div>
+          <div class="paso">
+            <h3>¿Por cuánto tiempo?</h3>
+            <div class="opciones" id="op-meses" role="group" aria-label="Meses"></div>
+          </div>
+          <div class="paso">
+            <h3>¿Cómo lo recibes?</h3>
+            <div class="opciones" id="op-entrega" role="group" aria-label="Entrega"></div>
+          </div>
+        </div>
+        <div class="resumen" aria-live="polite">
+          <div class="frascos"><b id="r-frascos">1</b><span id="r-frascos-t">frasco de 90 cápsulas</span></div>
+          <dl>
+            <dt>Cápsulas en total</dt><dd id="r-capsulas">90</dd>
+            <dt>Precio de referencia por frasco</dt><dd id="r-unit">—</dd>
+            <dt class="total">Total de referencia</dt><dd class="total" id="r-total">—</dd>
+          </dl>
+          <p class="nota" id="r-nota"></p>
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" autocomplete="name" placeholder="Ej: María Pérez">
+          <label for="ciudad">Ciudad o barrio</label>
+          <input id="ciudad" autocomplete="address-level2" placeholder="Ej: Caucasia, barrio El Palmar">
+          <a class="btn btn-wa" id="btn-pedido" href="#" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="uso">
+    <div class="wrap dos">
+      <div class="caja">
+        <h3>Cómo se toma</h3>
+        <div class="dosis" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p><b>3 cápsulas al día.</b> Sigue las instrucciones de la etiqueta.</p>
+        <p>Guárdalo bien cerrado, en un lugar fresco y seco, a no más de 25 °C y humedad no mayor a 65 %. Fuera del alcance de los niños.</p>
+      </div>
+      <div class="caja ingredientes">
+        <h3>Ingredientes</h3>
+        <p>Aceite de pescado (fuente de EPA y DHA), gelatina (gelificante), glicerina (estabilizante), agua, d-alfa tocoferol, mezcla de tocoferoles y aceite de soya (emulsionante).</p>
+        <p>Aporta vitamina E, grasas poliinsaturadas y ácidos grasos Omega 3 de aceite de pescado.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="preguntas" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-cab"><h2>Preguntas frecuentes</h2></div>
+      <details>
+        <summary>Si como pescado, ¿igual me sirve un Omega 3?</summary>
+        <p>Lo ideal es comer alimentos naturales ricos en Omega 3, y el pescado de mar de aguas frías es de las mejores fuentes. Pero si no comes pescado de mar al menos dos veces por semana, Omega 3 Plus te ayuda a obtener el EPA y DHA que quizás le falte a tu dieta.</p>
+      </details>
+      <details>
+        <summary>¿Sabe o huele a pescado?</summary>
+        <p>No. Es una cápsula blanda sin sabor ni olor a pescado, fácil de tragar.</p>
+      </details>
+      <details>
+        <summary>¿Cuánto me dura un frasco?</summary>
+        <p>Trae 90 cápsulas. Tomando 3 al día, te dura 30 días para una persona. En la sección "Arma tu pedido" calculas cuántos frascos necesitas para tu familia.</p>
+      </details>
+      <details>
+        <summary>¿Quién no debe tomarlo?</summary>
+        <p>No se debe consumir en embarazo ni en lactancia. Alguno de sus componentes puede causar hipersensibilidad; si tienes alergia al pescado o a la soya, o tomas algún medicamento, consulta primero con tu médico.</p>
+      </details>
+      <details>
+        <summary>¿Hacen envíos fuera de Caucasia?</summary>
+        <p>Sí, despachamos a todo el país. El valor del flete lo acordamos por WhatsApp según tu ciudad.</p>
+      </details>
+      <div class="aviso" style="margin-top:28px">
+        <b>Información importante</b>
+        Omega 3 Plus (línea de comercialización Nutrilite), registro sanitario SD2018-0004198. Este producto es un suplemento dietario, no es un medicamento. No sirve para el diagnóstico, tratamiento, cura o prevención de alguna enfermedad y no suple una alimentación equilibrada. No consumir en estado de embarazo y lactancia.
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--hielo);padding:44px 0">
+    <div class="wrap vendedor">
+      <div class="avatar" aria-hidden="true">H</div>
+      <div style="flex:1;min-width:220px">
+        <h3 style="font-size:24px;color:var(--abismo)">Te atiende Harold Marín</h3>
+        <p style="margin:6px 0 0;color:var(--gris)">Distribuidor independiente Amway en Caucasia, Antioquia. Envíos a toda Colombia. WhatsApp <a href="https://wa.me/573117700431">311 770 0431</a>.</p>
+      </div>
+      <a class="btn btn-wa" href="https://wa.me/573117700431?text=Hola%20Harold%2C%20quiero%20informaci%C3%B3n%20del%20Omega%203%20Plus%2090" target="_blank" rel="noopener">Escribir a Harold</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Fotos y videos: Amway Colombia y Amway Latinoamérica. Ficha oficial del producto en <a href="https://www.amway.com.co/product/omega-3-plus/A8914CO" target="_blank" rel="noopener">amway.com.co</a> (artículo A8914CO).</p>
+    <p>Distribuidor independiente Amway. Hecho por Vibras Positivas HM · <span id="hora"></span></p>
+  </div>
+</footer>
+
+<div class="barra">
+  <div class="info"><b>Omega 3 Plus 90</b><span id="barra-precio">Pide por WhatsApp</span></div>
+  <a class="btn btn-wa" id="btn-barra" href="#pedido">Pedir por WhatsApp</a>
+</div>
+
+<script>
+// ===== Ajustes: cambia aquí =====
+const WHATSAPP = '573117700431';
+const MOSTRAR_PRECIO = true;           // false = no mostrar precio, se cotiza por WhatsApp
+const PRECIO_FRASCO = 136710;          // Precio de referencia Amway Colombia (90 cápsulas × $1.519), consultado el 4 oct 2026
+const PRECIO_FECHA = '4 de octubre de 2026';
+// =================================
+
+const IMG = 'https://www.amway.com.co/assets/amshop/v3/assets/blt61e661dff490fa0d/';
+const fotos = [
+  {src: IMG+'blt1e3e1f4d32f24426/67ecf8b346c6e930898406f6/8914_01.jpg', alt:'Frasco de Omega 3 Plus 90 cápsulas', pie:'El frasco: 90 cápsulas blandas, Nutrilite.'},
+  {src: IMG+'blt127c8c616e32834e/67ecf9a076632258565a2439/8914_03.jpg', alt:'Cápsula blanda de Omega 3 Plus', pie:'La cápsula: blanda y sin sabor a pescado.'},
+  {src: IMG+'blt1381759b939baf7e/6838a12c98bc4e8481814fce/8914_tabla.jpg', alt:'Tabla nutricional de Omega 3 Plus', pie:'Tabla nutricional oficial.'},
+  {src: IMG+'blta202c41aa5c7ad30/680afe260e3d117fd47b12ca/8914.jpg', alt:'Combinación balanceada de EPA y DHA', pie:'Combinación balanceada de dos ácidos grasos Omega 3.'},
+  {src: IMG+'blt018bf2ff35de31f7/680afe65484ca4a098836905/omega.jpg', alt:'Fuente de Omega 3', pie:'Fuente de Omega 3 de peces de aguas frías.'}
+];
+const q = (w,qq) => `?quality=${qq}&width=${w}&format=webp`;
+
+const visor = document.getElementById('visor'), mins = document.getElementById('miniaturas'), pie = document.getElementById('pie-foto');
+function verFoto(i){
+  visor.src = fotos[i].src + q(1200,85); visor.alt = fotos[i].alt; pie.textContent = fotos[i].pie;
+  [...mins.children].forEach((b,j)=>b.setAttribute('aria-current', j===i));
+}
+fotos.forEach((f,i)=>{
+  const b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Ver: '+f.alt);
+  b.innerHTML=`<img src="${f.src+q(200,70)}" alt="" loading="lazy">`;
+  b.onclick=()=>verFoto(i); mins.appendChild(b);
+});
+verFoto(0);
+document.querySelectorAll('img').forEach(im=>im.addEventListener('error',()=>{ if(im.src.includes('format=webp')) im.src=im.src.replace('format=webp','format=jpg'); }));
+
+// Videos: se cargan al tocar (más rápido y ahorra datos)
+const videos = [
+  {id:'44Bih9pAXhA', t:'Nueva imagen, nueva fórmula', s:'Amway Colombia · Omega 3 Plus de Nutrilite'},
+  {id:'OkjO5lyEmjA', t:'Omega 3 para cuidar tu salud', s:'Amway Latinoamérica · Conoce el Omega 3 Plus'}
+];
+const vl=document.getElementById('videos-lista');
+videos.forEach(v=>{
+  const d=document.createElement('div');
+  d.innerHTML=`<div class="video"><button type="button" aria-label="Reproducir video: ${v.t}"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy"><span><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="#10222E"/></svg></span></button></div><p class="video-t">${v.t}</p><p class="video-s">${v.s}</p>`;
+  d.querySelector('button').onclick=e=>{
+    e.currentTarget.parentElement.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0" title="${v.t}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+  };
+  vl.appendChild(d);
+});
+
+// Cotizador
+const estado={personas:1,meses:1,entrega:'Recojo en Caucasia'};
+const cop=n=>'$'+n.toLocaleString('es-CO');
+function grupo(id,clave,vals,fmt){
+  const el=document.getElementById(id);
+  vals.forEach(v=>{const b=document.createElement('button');b.type='button';b.textContent=fmt(v);
+    b.onclick=()=>{estado[clave]=v;[...el.children].forEach(x=>x.setAttribute('aria-pressed',x===b));calcular();};
+    b.setAttribute('aria-pressed',estado[clave]===v);el.appendChild(b);});
+}
+grupo('op-personas','personas',[1,2,3,4,5,6],v=>v);
+grupo('op-meses','meses',[1,2,3,6],v=>v===1?'1 mes':v+' meses');
+grupo('op-entrega','entrega',['Recojo en Caucasia','Domicilio en Caucasia','Envío a otra ciudad'],v=>v);
+
+function saludo(){
+  const h=+new Intl.DateTimeFormat('en-US',{hour:'numeric',hour12:false,timeZone:'America/Bogota'}).format(new Date());
+  return h<12?'Buenos días':h<19?'Buenas tardes':'Buenas noches';
+}
+function calcular(){
+  const fr=estado.personas*estado.meses, total=fr*PRECIO_FRASCO;
+  document.getElementById('r-frascos').textContent=fr;
+  document.getElementById('r-frascos-t').textContent=fr===1?'frasco de 90 cápsulas':'frascos de 90 cápsulas';
+  document.getElementById('r-capsulas').textContent=(fr*90).toLocaleString('es-CO');
+  document.getElementById('r-unit').textContent=MOSTRAR_PRECIO?cop(PRECIO_FRASCO):'Por WhatsApp';
+  document.getElementById('r-total').textContent=MOSTRAR_PRECIO?cop(total):'Por WhatsApp';
+  const flete=estado.entrega==='Envío a otra ciudad'?' El flete se acuerda por WhatsApp según tu ciudad.':'';
+  document.getElementById('r-nota').textContent=(MOSTRAR_PRECIO?`Precio de referencia de Amway Colombia al ${PRECIO_FECHA}. Confirmamos el valor final por WhatsApp.`:'Te enviamos el precio por WhatsApp.')+flete;
+  document.getElementById('barra-precio').textContent=MOSTRAR_PRECIO?`Desde ${cop(PRECIO_FRASCO)} el frasco`:'Pide por WhatsApp';
+  const nom=document.getElementById('nombre').value.trim(), ciu=document.getElementById('ciudad').value.trim();
+  const msg=`${saludo()}, Harold. Quiero pedir Omega 3 Plus 90 (Nutrilite, A8914CO).
+• Frascos: ${fr} (para ${estado.personas} ${estado.personas===1?'persona':'personas'}, ${estado.meses} ${estado.meses===1?'mes':'meses'})
+• Entrega: ${estado.entrega}${ciu?'\n• Ciudad/barrio: '+ciu:''}${MOSTRAR_PRECIO?'\n• Total de referencia: '+cop(total):''}${nom?'\n• Nombre: '+nom:''}`;
+  const url=`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`;
+  document.getElementById('btn-pedido').href=url;
+  document.getElementById('btn-barra').href=url;
+  document.getElementById('btn-barra').target='_blank';
+}
+['nombre','ciudad'].forEach(id=>document.getElementById(id).addEventListener('input',calcular));
+calcular();
+
+document.getElementById('hora').textContent='Hora Colombia: '+new Intl.DateTimeFormat('es-CO',{dateStyle:'long',timeStyle:'short',timeZone:'America/Bogota'}).format(new Date());
+
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>

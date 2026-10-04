@@ -1,0 +1,13 @@
+{
+  "name": "Omega 3 Plus · Nutrilite — Pide con Harold",
+  "short_name": "Omega 3 Plus",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0C3550",
+  "theme_color": "#0C3550",
+  "lang": "es-CO",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

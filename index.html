@@ -111,7 +111,7 @@ section{padding:64px 0}
 .video button img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.8}
 .video button span{position:relative;width:74px;height:74px;border-radius:50%;background:var(--capsula);display:grid;place-items:center}
 .video button span svg{width:30px;margin-left:5px}
-.video iframe{width:100%;height:100%;border:0}
+.video iframe,.video>div{width:100%;height:100%;border:0}
 .video-t{font-weight:600;margin:10px 0 0}
 .video-s{font-size:14px;color:var(--gris);margin:2px 0 0}
 
@@ -251,7 +251,7 @@ footer a{color:#fff}
     <div class="wrap">
       <div class="sec-cab">
         <h2>Videos</h2>
-        <p>Videos de Amway Latinoamérica sobre Omega 3 Plus de Nutrilite. Toca para reproducir.</p>
+        <p>Videos sobre el Omega 3 Plus de Nutrilite. Toca para reproducir.</p>
       </div>
       <div class="videos" id="videos-lista"></div>
     </div>
@@ -401,16 +401,37 @@ verFoto(0);
 document.querySelectorAll('img').forEach(im=>im.addEventListener('error',()=>{ if(im.src.includes('format=webp')) im.src=im.src.replace('format=webp','format=jpg'); }));
 
 // Videos: se cargan al tocar (más rápido y ahorra datos)
+// Cada recuadro tiene videos de respaldo: si uno deja de estar disponible en YouTube, pasa solo al siguiente.
 const videos = [
-  {id:'44Bih9pAXhA', t:'Nueva imagen, nueva fórmula', s:'Amway Colombia · Omega 3 Plus de Nutrilite'},
-  {id:'OkjO5lyEmjA', t:'Omega 3 para cuidar tu salud', s:'Amway Latinoamérica · Conoce el Omega 3 Plus'}
+  [ {id:'tEmNO7ckzvY', t:'Omega 3 Plus: sus beneficios', s:'Video sobre el Omega 3 Plus de Nutrilite'},
+    {id:'Iw9Mrm7KRF0', t:'Por qué consumir Omega 3', s:'Datos sobre el Omega 3 Plus de Nutrilite'},
+    {id:'6QMAA33YjX0', t:'Omega 3 de Nutrilite con certificación Friend of the Sea', s:'Amway · en inglés'} ],
+  [ {id:'OkjO5lyEmjA', t:'Omega 3 para cuidar tu salud', s:'Amway Latinoamérica · Conoce el Omega 3 Plus'},
+    {id:'6QMAA33YjX0', t:'Omega 3 de Nutrilite con certificación Friend of the Sea', s:'Amway · en inglés'} ]
 ];
+let ytListo=null;
+function cargarYT(){
+  if(ytListo) return ytListo;
+  ytListo=new Promise(res=>{ window.onYouTubeIframeAPIReady=res;
+    const s=document.createElement('script'); s.src='https://www.youtube.com/iframe_api'; document.head.appendChild(s); });
+  return ytListo;
+}
 const vl=document.getElementById('videos-lista');
-videos.forEach(v=>{
+videos.forEach((lista,n)=>{
+  let i=0; const v=lista[0];
   const d=document.createElement('div');
   d.innerHTML=`<div class="video"><button type="button" aria-label="Reproducir video: ${v.t}"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy"><span><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z" fill="#10222E"/></svg></span></button></div><p class="video-t">${v.t}</p><p class="video-s">${v.s}</p>`;
-  d.querySelector('button').onclick=e=>{
-    e.currentTarget.parentElement.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0" title="${v.t}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+  const caja=d.querySelector('.video'), tit=d.querySelector('.video-t'), sub=d.querySelector('.video-s');
+  d.querySelector('button').onclick=async()=>{
+    caja.innerHTML=`<div id="yt${n}"></div>`;
+    await cargarYT();
+    const p=new YT.Player('yt'+n,{width:'100%',height:'100%',videoId:lista[i].id,host:'https://www.youtube-nocookie.com',
+      playerVars:{autoplay:1,rel:0,playsinline:1},
+      events:{onError:()=>{
+        i++;
+        if(i<lista.length){ tit.textContent=lista[i].t; sub.textContent=lista[i].s; p.loadVideoById(lista[i].id); }
+        else { caja.innerHTML='<p style="color:#fff;padding:20px">Este video no está disponible. Escríbenos por WhatsApp y te lo enviamos.</p>'; }
+      }}});
   };
   vl.appendChild(d);
 });
